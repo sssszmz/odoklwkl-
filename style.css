@@ -1,0 +1,356 @@
+/* ---------- Общие стили ---------- */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  width: 100%;
+  min-width: 1920px;
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 30px;
+  line-height: 1.25;
+  color: #fff;
+  background-color: #fff;
+}
+
+ul { list-style: none; }
+a { color: inherit; text-decoration: none; }
+img { display: block; max-width: 100%; }
+
+.container { width: 1176px; margin: 0 auto; }
+
+.accent { color: #c6f31b; }
+.blue { color: #3366ff; }
+
+/* ---------- Заголовки ---------- */
+.title,
+.hero-title,
+.skills-title,
+.form-title { font-family: "Unbounded", Arial, sans-serif; }
+
+.title { font-size: 80px; font-weight: 800; line-height: 1.15; color: #000; }
+.white { color: #fff; }
+.center { text-align: center; }
+.right { text-align: right; }
+
+/* ---------- Кнопки ---------- */
+.btn {
+  display: inline-block;
+  padding: 22px 50px;
+  font-size: 38px;
+  font-weight: 700;
+  color: #fff;
+  background-color: #3366ff;
+  border-radius: 60px;
+}
+.btn-small { padding: 18px 40px; font-size: 30px; font-weight: 600; }
+.btn-center { display: block; width: fit-content; margin: 0 auto; }
+
+/* ---------- 1. Первый экран ---------- */
+.hero { height: 1557px; padding-top: 60px; background-color: #171717; background-position: center 0; }
+
+.header { display: flex; justify-content: space-between; margin-bottom: 90px; }
+.header-left,
+.header-right { display: flex; flex-direction: column; gap: 16px; }
+.header-right { align-items: flex-end; margin-top: 35px; }
+.header-right .header-link { margin-top: -10px; margin-right: 5px; }
+.header-link { font-size: 34px; font-weight: 700; margin-left: 5px; }
+
+.logo { display: block; width: 194px; height: 105px; margin-top: -10px; margin-bottom: 5px; }
+
+.hero-title {
+  margin: 0 auto 130px;
+  font-size: 80px;
+  font-weight: 900;
+  line-height: 130%;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.hero-offer { width: 1049px; height: 333px; margin: 0 auto 61px; padding: 25px 50px; font-size: 40px; line-height: 130%; }
+.offer-title { margin-top: 30px; font-weight: 700; color: #c6f31b; }
+.offer-text { width: 1000px; font-weight: 500; }
+
+.hero-note {
+  position: relative;
+  margin: 65px auto 0;
+  margin-left: 20px;
+  padding-left: 40px;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 130%;
+}
+.hero-note::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 0;
+  width: 22px;
+  height: 22px;
+  background-color: #c6f31b;
+  border-radius: 50%;
+}
+
+/* ---------- 2. Что такое исследование ---------- */
+.about { height: 972px; padding-top: 30px; background-color: #3366ff; background-position: center -1557px; }
+.about .title { margin-top: 10px; margin-bottom: 75px; font-size: 64px; font-weight: 700; line-height: 130%; }
+
+.about-list {
+  width: 1002px;
+  height: 515px;
+  margin-left: 69px;
+  padding: 30px 50px;
+  background-color: #fff;
+  border: 6px solid #000;
+  border-radius: 20px;
+}
+.about-item { margin-bottom: 28px; font-size: 34px; font-weight: 500; color: #000; }
+.about-item:last-child { margin-bottom: 0; }
+
+/* ---------- 3. Как вам помогут ---------- */
+.help { height: 935px; padding-top: 86px; background-color: #fff; background-position: center -2529px; }
+.help .title { margin: 0 0 150px auto; font-size: 64px; text-align: center; line-height: 130%; }
+
+.cards { display: flex; gap: 25px; }
+.card { flex: 1; height: 320px; padding: 26px 6px 30px; border-radius: 24px; }
+.card-icon { width: 60px; height: 60px; margin: 0 auto; }
+.card-blue { height: 309px; background-color: #3366ff; }
+.card-green { height: 369px; background-color: #c6f31b; color: #000; }
+.card-gray { height: 328px; background-color: #555; }
+.card-title { margin-top: 14px; font-size: 24px; font-weight: 600; }
+.card-text { font-size: 24px; font-weight: 500; }
+h3.card-title { text-align: center; margin-bottom: 30px; }
+
+/* ---------- 4. Форма ---------- */
+.form-section { height: 1481px; padding-top: 220px; background-color: #171717; background-position: center -3464px; }
+.form-title { margin: 0 0 90px 10px; font-size: 69px; font-weight: 700; line-height: 130%; }
+
+.form { display: flex; flex-direction: column; width: 770px; margin-left: 216px; }
+.form-label { margin-top: 31px; margin-bottom: 16px; font-size: 40px; font-weight: 700; font-family: "Unbounded", Arial, sans-serif; }
+.form-input {
+  height: 118px;
+  margin-bottom: 29px;
+  padding: 0 40px;
+  font-family: "Unbounded", Arial, sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+  background-color: transparent;
+  border-radius: 60px;
+  border: 5px solid #fff;
+}
+.form-input::placeholder { color: #bbb; }
+.form-button {
+  height: 150px;
+  margin-top: 45px;
+  font-family: inherit;
+  font-size: 70px;
+  font-weight: 800;
+  color: #000;
+  background-image: url(img/bgbut.svg);
+  border: none;
+  border-radius: 75px;
+  cursor: pointer;
+}
+
+/* ---------- 5. Что мы умеем ---------- */
+.skills { height: 1651px; padding-top: 60px; background-color: #fff; background-position: center -4945px; }
+.skills-title { margin-left: 90px; margin-bottom: 60px; font-size: 96px; }
+.tag {
+  position: relative;
+  display: inline-block;
+  width: 536px;
+  margin-left: 12px;
+  padding: 6px 22px 10px;
+  color: #fff;
+  background: #3366ff;
+  border-radius: 53px;
+  transform: rotate(-6deg);
+}
+
+.skills-grid { display: flex; align-items: flex-start; gap: 24px; width: max-content; margin: 0 auto 24px; }
+.column { display: flex; flex-direction: column; align-items: flex-start; flex: none; gap: 24px; }
+.column-left { flex: 1.2; margin-right: 27px; }
+.column-right { flex: 1; margin-top: 48px; }
+
+.skill {
+  position: relative;
+  flex: none;
+  width: 505px;
+  padding: 32px;
+  background-color: #3366ff;
+  border-radius: 23px;
+}
+.skill-goods { width: 490px; height: 362px; margin-left: 10px; }
+.skill-market { width: 497px; height: 529px; margin-top: 120px; margin-left: 11px; }
+.skill-rivals { width: 446px; }
+.skill-ads { width: 504px; height: 416px; background-image: url(img/card4.svg); margin-top: 9px; margin-right: 10px; }
+.skill-sales { width: 505px; height: 376px; margin-top: 7px; }
+.skill-wide { width: 1062px; height: 225px; margin-top: 31px; margin-left: 60px; }
+
+.skill-title { margin-top: -15px; margin-bottom: 20px; margin-left: -10px; font-size: 30px; font-weight: 700; }
+.skill-text { margin-left: -10px; font-size: 24px; font-weight: 500; }
+h3.skill-title { margin-bottom: 55px; }
+
+/* ---------- 6. Преимущества ---------- */
+.advantages { height: 1459px; padding-top: 70px; background-color: #3366ff; background-position: center -6596px; }
+.advantages .title { margin-bottom: 80px; font-size: 56px; line-height: 130%; }
+.advantages-list { display: flex; flex-direction: column; align-items: flex-end; gap: 135px; }
+.advantage { width: 600px; padding: 34px 40px; font-size: 40px; font-weight: 700; }
+.advantage:nth-child(1) { margin-top: 14px; }
+.advantage:nth-child(2) { margin-top: -15px; transform: translateX(-190px); }
+.advantage:nth-child(3) { margin-top: -35px; }
+
+/* ---------- 7. Кому необходимы ---------- */
+.clients { height: 1710px; padding-top: 110px; background-color: #171717; background-position: center -8055px; }
+.clients .title { margin: 0 0 120px auto; font-size: 64px; line-height: 130%; color: #c6f31b; }
+.clients-list { display: flex; flex-direction: column; gap: 130px; }
+.client {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 600px;
+  height: 180px;
+  font-size: 50px;
+  font-weight: 700;
+  color: #000;
+  text-align: center;
+}
+.client-right { align-self: flex-end; }
+
+/* ---------- 8. Проекты ---------- */
+.projects { height: 1112px; padding-top: 60px; background-color: #fff; background-position: center -9765px; }
+.projects .title { margin-bottom: 90px; font-size: 81px; }
+
+.project {
+  position: relative;
+  height: 736px;
+  padding: 50px 50px 0;
+  background-image: url(img/BGLAST.svg);
+  background-repeat: no-repeat;
+  border-radius: 50px;
+}
+.project-label {
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 4px 24px;
+  font-size: 48px;
+  font-weight: 800;
+  font-family: "Unbounded", Arial, sans-serif;
+  color: #3366ff;
+  background-color: #fff;
+  border-radius: 27px;
+}
+.project-text { width: 565px; margin-bottom: 36px; font-size: 26px; font-weight: 700; }
+.project-logo {
+  position: absolute;
+  top: 190px;
+  right: 60px;
+  width: 300px;
+  padding: 24px;
+  background-color: #fff;
+  border-radius: 30px;
+}
+
+/* ---------- Общий фон-рисунок секций ---------- */
+.hero,
+.about,
+.help,
+.form-section,
+.skills,
+.advantages,
+.clients,
+.projects {
+  background-image: url("img/bgfinal.svg");
+  background-repeat: no-repeat;
+  background-size: 1920px 10877px;
+}
+
+/* ===================== МОБИЛКА ===================== */
+@media (max-width: 900px) {
+  body { min-width: 0; font-size: 16px; overflow-x: hidden; }
+  .container { width: auto; padding: 0 20px; }
+
+  .hero, .about, .help, .form-section,
+  .skills, .advantages, .clients, .projects {
+    height: auto;
+    padding-bottom: 48px;
+    background-image: none;
+  }
+
+  .title,
+  .about .title, .help .title, .advantages .title,
+  .clients .title, .projects .title { margin: 0 0 28px; font-size: 26px; text-align: center; }
+  .hero-title { margin: 0 0 32px; font-size: 28px; white-space: normal; }
+  .form-title { margin: 0 0 28px; font-size: 26px; }
+  .skills-title { margin: 0 0 28px; font-size: 30px; }
+
+  .btn { padding: 14px 28px; font-size: 18px; }
+
+  /* 1. Первый экран */
+  .header { margin-bottom: 40px; }
+  .logo { width: 120px; height: auto; }
+  .header-link { font-size: 14px; }
+  .hero-offer { width: auto; height: auto; margin: 0 0 32px; padding: 20px; font-size: 18px; }
+  .offer-text { width: auto; }
+  .hero-note { margin: 24px 0 0; font-size: 14px; }
+
+  /* 2. Что такое исследование */
+  .about-list { width: auto; height: auto; margin-left: 0; padding: 20px; border-width: 4px; }
+  .about-item { margin-bottom: 16px; font-size: 16px; }
+
+  /* 3. Как вам помогут */
+  .help { padding-top: 48px; }
+  .cards { flex-direction: column; gap: 16px; }
+  .card, .card-blue, .card-green, .card-gray { height: auto; padding: 24px 20px; }
+  .card-title, .card-text { font-size: 18px; }
+
+  /* 4. Форма */
+  .form-section { padding-top: 48px; }
+  .form { width: 100%; margin-left: 0; }
+  .form-label { margin-top: 16px; margin-bottom: 8px; font-size: 18px; }
+  .form-input { height: 56px; margin-bottom: 12px; font-size: 16px; border-width: 3px; }
+  .form-button { height: 72px; margin-top: 24px; font-size: 26px; background-color: #c6f31b; background-size: cover; }
+
+  /* 5. Что мы умеем */
+  .skills { padding-top: 48px; }
+  .tag { width: auto; margin-left: 0; padding: 4px 14px 6px; }
+  .skills-grid { flex-direction: column; width: auto; margin: 0 0 16px; gap: 16px; }
+  .column, .column-left, .column-right { width: 100%; margin: 0; gap: 16px; }
+  .skill, .skill-goods, .skill-market, .skill-rivals,
+  .skill-ads, .skill-sales, .skill-wide { width: 100%; height: auto; margin: 0; padding: 20px; }
+  .skill-title, h3.skill-title { margin: 0 0 12px; font-size: 20px; }
+  .skill-text { margin: 0; font-size: 16px; }
+
+  /* 6. Преимущества */
+  .advantages { padding-top: 48px; }
+  .advantages-list { align-items: stretch; gap: 16px; }
+  .advantage, .advantage:nth-child(n) { width: 100%; margin-top: 0; padding: 20px; font-size: 18px; transform: none; }
+
+  /* 7. Кому необходимы */
+  .clients .title { margin: 0 0 36px 40px; margin-top: -70px; font-size: 22px; line-height: 1.2; text-align: right; }
+  .clients-list { gap: 34px; }
+  .clients .client {
+    width: 170px;
+    height: 50px;
+    font-size: 15px;
+    background-color: #c6f31b;
+    border-radius: 25px;
+    box-shadow: 3px 3px 0 #fff;
+  }
+  .clients .client-left { align-self: flex-start; margin-left: 14px; }
+  .clients .client-right { align-self: flex-end; margin-right: 10px; }
+
+  /* 8. Проекты */
+  .projects .title { width: 300px; margin: 0 0 20px; font-size: 24px; text-align: left; }
+  .project {
+    height: 370px;
+    padding: 20px 16px 110px;
+    border-radius: 24px;
+    background-image: url(img/bglastm.svg);
+    background-color: #3366ff;
+    background-size: 100% 100%;
+  }
+  .project-label { margin-bottom: 12px; padding: 2px 18px; font-size: 20px; border-radius: 16px; }
+  .project-text { width: 280px; margin-bottom: 20px; font-size: 10px; line-height: 1.35; }
+  .project-logo { top: auto; right: 16px; bottom: 120px; width: 91px; padding: 10px; border-radius: 16px; }
+}
